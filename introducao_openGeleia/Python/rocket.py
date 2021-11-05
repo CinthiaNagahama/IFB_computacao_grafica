@@ -75,23 +75,23 @@ def reshape(w, h):
 
 def keyboard(key, x, y):
     if ord(key) == 119 or ord(key) == 87:  # w | W
-        glTranslatef(X, Y + 5, 0)
+        glTranslatef(0, 5, 0)
         glutPostRedisplay()
     elif ord(key) == 97 or ord(key) == 65:  # a | A
-        glTranslatef(X - 5, Y, 0)
+        glTranslatef(-5, 0, 0)
         glutPostRedisplay()
     elif ord(key) == 115 or ord(key) == 83:  # s | S
-        glTranslatef(X, Y - 5, 0)
+        glTranslatef(0, -5, 0)
         glutPostRedisplay()
     elif ord(key) == 100 or ord(key) == 68:  # d | D
-        glTranslatef(X + 5, Y, 0)
+        glTranslatef(5, 0, 0)
         glutPostRedisplay()
 
     elif ord(key) == 101 or ord(key) == 69:  # e | E
-        glRotatef(-15, X, Y, 1)
+        glRotatef(-15, 0, 0, 1)
         glutPostRedisplay()
     elif ord(key) == 113 or ord(key) == 81:  # q | Q
-        glRotatef(15, X, Y, 1)
+        glRotatef(15, 0, 0, 1)
         glutPostRedisplay()
 
     elif ord(key) == 120 or ord(key) == 88:  # x | X
