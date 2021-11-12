@@ -101,6 +101,10 @@ def keyboard(key, x, y):
         glScalef(2, 2, 0)
         glutPostRedisplay()
 
+    elif ord(key) == ord("i") or ord(key) == ord("I"):
+        glLoadIdentity()
+        glutPostRedisplay()
+
     elif ord(key) == 27 or ord(key) == 122 or ord(key) == 90:  # z | Z
         glutLeaveMainLoop()
 
